@@ -33,12 +33,14 @@ void toggleRelay( )
 		// Turn the relay and LED on.
 		digitalWrite( RELAY_PIN, 1 );
 		digitalWrite( LED_PIN, 1 );
+		Serial.println( "LED 1" );
 	}
 	else
 	{
 		// Turn the relay and LED off.
 		digitalWrite( RELAY_PIN, 0 );
 		digitalWrite( LED_PIN, 0 );
+		Serial.println( "LED 0" );
 	}
 } // End of toggleRelay() function.
 
